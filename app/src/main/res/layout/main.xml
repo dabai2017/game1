@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_weight="1.8"
+		android:background="#80CBC4"
+		android:gravity="center">
+
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@drawable/i"
+			android:id="@+id/mainImageView1"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_weight="1.0"
+		android:background="#FFE0B2"
+		android:gravity="center">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="上"
+			android:id="@+id/mainButton1"
+			android:onClick="up"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="左"
+				android:id="@+id/mainButton2"
+				android:onClick="left"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="右"
+				android:id="@+id/mainButton3"
+				android:onClick="right"/>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="下"
+			android:id="@+id/mainButton4"
+			android:onClick="down"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
